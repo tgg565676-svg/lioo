@@ -1,295 +1,203 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ติดต่อเรา</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
 
-<title>ติดต่อเรา</title>
+    body {
+      background: #f5fff0;
+      color: #222;
+    }
 
-<style>
+    header {
+      height: 300px;
+      background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)),
+        url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+    }
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial,sans-serif;
-}
+    header h1 {
+      font-size: 55px;
+    }
 
-body{
-    background:#f5fff0;
-}
+    nav {
+      background: #7cb342;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
 
-/* Header */
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 18px 25px;
+      transition: 0.3s;
+      font-size: 18px;
+    }
 
-header{
-    height:300px;
-    background:linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),
-    url("Screenshot 2026-08-03 100717.png");
-    background-size:cover;
-    background-position:center;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    color:white;
-}
+    nav a:hover {
+      background: #558b2f;
+    }
 
-header h1{
-    font-size:55px;
-}
+    .contact {
+      width: 90%;
+      max-width: 1200px;
+      margin: 50px auto;
+    }
 
-/* Navbar */
+    .contact h2 {
+      text-align: center;
+      margin-bottom: 10px;
+      color: #33691e;
+      font-size: 40px;
+    }
 
-nav{
-    background:#7cb342;
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-}
+    .contact p {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #555;
+    }
 
-nav a{
-    color:white;
-    text-decoration:none;
-    padding:18px 25px;
-    transition:.3s;
-    font-size:18px;
-}
+    .container {
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
 
-nav a:hover{
-    background:#558b2f;
-}
+    .left, .right {
+      flex: 1;
+      min-width: 300px;
+      background: white;
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    }
 
-/* Contact */
+    .left h3, .right h3 {
+      margin-bottom: 20px;
+      color: #558b2f;
+    }
 
-.contact{
-    width:90%;
-    max-width:1200px;
-    margin:50px auto;
-}
+    .info {
+      margin-bottom: 20px;
+      font-size: 18px;
+    }
 
-.contact h2{
-    text-align:center;
-    margin-bottom:10px;
-    color:#33691e;
-    font-size:40px;
-}
+    input, textarea {
+      width: 100%;
+      padding: 15px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+    }
 
-.contact p{
-    text-align:center;
-    margin-bottom:40px;
-    color:#555;
-}
+    textarea { resize: none; }
 
-.container{
-    display:flex;
-    gap:40px;
-    flex-wrap:wrap;
-}
+    button {
+      width: 100%;
+      padding: 15px;
+      background: #7cb342;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 18px;
+      transition: 0.3s;
+    }
 
-.left{
-    flex:1;
-    min-width:300px;
-    background:white;
-    border-radius:15px;
-    padding:30px;
-    box-shadow:0 5px 15px rgba(0,0,0,.15);
-}
+    button:hover {
+      background: #558b2f;
+    }
 
-.right{
-    flex:1;
-    min-width:300px;
-    background:white;
-    border-radius:15px;
-    padding:30px;
-    box-shadow:0 5px 15px rgba(0,0,0,.15);
-}
+    .map {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto 50px;
+    }
 
-.left h3,
-.right h3{
-    margin-bottom:20px;
-    color:#558b2f;
-}
+    .map iframe {
+      width: 100%;
+      height: 400px;
+      border: none;
+      border-radius: 15px;
+    }
 
-.info{
-    margin-bottom:20px;
-    font-size:18px;
-}
+    footer {
+      background: #33691e;
+      color: white;
+      text-align: center;
+      padding: 30px;
+    }
 
-input,
-textarea{
+    footer p {
+      margin: 8px;
+    }
 
-    width:100%;
-    padding:15px;
-    margin:10px 0;
-    border:1px solid #ccc;
-    border-radius:8px;
-    font-size:16px;
-
-}
-
-textarea{
-    resize:none;
-}
-
-button{
-
-    width:100%;
-    padding:15px;
-    background:#7cb342;
-    color:white;
-    border:none;
-    border-radius:8px;
-    cursor:pointer;
-    font-size:18px;
-    transition:.3s;
-
-}
-
-button:hover{
-
-    background:#558b2f;
-
-}
-
-/* Map */
-
-.map{
-
-    width:90%;
-    max-width:1200px;
-    margin:auto;
-    margin-bottom:50px;
-
-}
-
-.map iframe{
-
-    width:100%;
-    height:400px;
-    border-radius:15px;
-    border:none;
-
-}
-
-/* Footer */
-
-footer{
-
-    background:#33691e;
-    color:white;
-    text-align:center;
-    padding:30px;
-
-}
-
-footer p{
-
-    margin:8px;
-
-}
-
-@media(max-width:768px){
-
-.container{
-
-flex-direction:column;
-
-}
-
-header h1{
-
-font-size:38px;
-
-}
-
-}
-
-</style>
-
+    @media (max-width: 768px) {
+      .container { flex-direction: column; }
+      header h1 { font-size: 38px; }
+    }
+  </style>
 </head>
-
 <body>
+  <header>
+    <h1>ติดต่อเรา</h1>
+  </header>
 
-<header>
+  <nav>
+    <a href="index.html">หน้าแรก</a>
+    <a href="travel.html">สถานที่ท่องเที่ยว</a>
+    <a href="food.html">อาหาร</a>
+    <a href="teepak.html">ที่พัก</a>
+    <a href="contact.html">ติดต่อเรา</a>
+  </nav>
 
-<h1>ติดต่อเรา</h1>
+  <section class="contact">
+    <h2>ติดต่อเรา</h2>
+    <p>หากมีข้อสงสัยหรือข้อเสนอแนะ สามารถส่งข้อความหาเราได้ตลอดเวลา</p>
 
-</header>
+    <div class="container">
+      <div class="left">
+        <h3>ข้อมูลการติดต่อ</h3>
+        <div class="info">📍 จังหวัดภูเก็ต</div>
+        <div class="info">📧 tgg565676@gmail.com</div>
+        <div class="info">📞 091-807-3010</div>
+        <div class="info">🕒 เปิดให้บริการทุกวัน 08:00 - 18:00 น.</div>
+      </div>
 
-<nav>
+      <div class="right">
+        <h3>ส่งข้อความ</h3>
+        <form>
+          <input type="text" placeholder="ชื่อของคุณ">
+          <input type="email" placeholder="อีเมล">
+          <input type="text" placeholder="หัวข้อ">
+          <textarea rows="6" placeholder="พิมพ์ข้อความ"></textarea>
+          <button type="button">ส่งข้อความ</button>
+        </form>
+      </div>
+    </div>
+  </section>
 
-<a href="website.html">หน้าแรก</a>
-<a href="travel.html">สถานที่ท่องเที่ยว</a>
-<a href="food.html">อาหาร</a>
-<a href="location.html">ที่พัก</a>
-<a href="contact.html">ติดต่อเรา</a>
+  <section class="map">
+    <iframe src="https://www.google.com/maps?q=Phuket%20Thailand&output=embed" loading="lazy" allowfullscreen></iframe>
+  </section>
 
-</nav>
-
-<section class="contact">
-
-<h2>ติดต่อเรา</h2>
-
-<p>หากมีข้อสงสัยหรือข้อเสนอแนะ สามารถส่งข้อความหาเราได้ตลอดเวลา</p>
-
-<div class="container">
-
-<div class="left">
-
-<h3>ข้อมูลการติดต่อ</h3>
-
-<div class="info">📍 จังหวัดภูเก็ตเก็ด</div>
-
-<div class="info">📧tgg565676@gmail.com</div>
-
-<div class="info">📞 091-807-3010</div>
-
-<div class="info">🕒 เปิดให้บริการทุกวัน 08:00 - 18:00 น.</div>
-
-</div>
- 
-<img src="" style="width:100; height:150; object-fit:cover;" border-radius:15px; margin-bottom:15px;>
-
-<div class="right">
-
-<h3>ส่งข้อความ</h3>
-
-<form>
-
-<input type="text" placeholder="ชื่อของคุณ">
-
-<input type="email" placeholder="อีเมล">
-
-<input type="text" placeholder="หัวข้อ">
-
-<textarea rows="6" placeholder="พิมพ์ข้อความ"></textarea>
-
-<button>ส่งข้อความ</button>
-
-</form>
-
-</div>
-
-</div>
-
-</section>
-
-<section class="map">
-
-<iframe src="" loading="lazy"></iframe>
-
-</section>
-
-<footer>
-
-<h2></h2>
-
-<p>📧 Email :</p>
-
-<p>📞 โทร : </p>
-
-<p>© 2026 All Rights Reserved</p>
-
-</footer>
-
+  <footer>
+    <p>📧 Email : tgg565676@gmail.com</p>
+    <p>📞 โทร : 091-807-3010</p>
+    <p>© 2026 All Rights Reserved</p>
+  </footer>
 </body>
 </html>
