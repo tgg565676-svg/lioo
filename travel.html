@@ -1,161 +1,249 @@
 <!DOCTYPE html>
-<html lang="th">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>สถานที่เที่ยวภูเก็ต</title>
-  <style>
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f7fbff;
-      color: #111;
-    }
-    img { display: block; max-width: 100%; }
-    a { text-decoration: none; color: inherit; }
-    .navbar {
-      display: flex;
-      flex-wrap: wrap;
-      background: #0e9cd4;
-    }
-    .navbar a {
-      color: #000;
-      padding: 14px 20px;
-      text-align: center;
-      font-weight: bold;
-    }
-    .navbar a:hover { background: #0aced4; }
-    .container {
-      display: flex;
-      flex-wrap: wrap;
-      max-width: 1400px;
-      margin: 0 auto;
-    }
-    .side { flex: 30%; background: #f2f4f5; padding: 20px; }
-    .main { flex: 70%; background: #fff; padding: 20px; }
-    .hero img {
-      width: 100%;
-      height: 500px;
-      object-fit: cover;
-    }
-    .feature img, .gallery-item img, .featured-image img {
-      width: 100%;
-      border-radius: 12px;
-      object-fit: cover;
-    }
-    .feature img { height: 260px; margin: 10px 0; }
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 16px;
-      margin: 20px 0;
-    }
-    .gallery-item {
-      flex: 1 1 220px;
-      border: 1px solid #d0d7de;
-      background: #fff;
-      border-radius: 12px;
-      overflow: hidden;
-    }
-    .gallery-item img { height: 220px; }
-    .desc {
-      padding: 12px;
-      text-align: center;
-      font-weight: bold;
-    }
-    footer {
-      background: #06bdddda;
-      padding: 24px 20px;
-      text-align: center;
-    }
-    footer h5 { margin: 0; line-height: 1.8; }
-    @media screen and (max-width: 700px) {
-      .container, .navbar { flex-direction: column; }
-      .hero img { height: 300px; }
-    }
-  </style>
+<title>หน้าแรก</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+
+
+/* Top navigation bar */
+.navbar {
+  display: flex;
+  background-color: #0e9cd4;
+}
+
+/* Navigation bar links */
+.navbar a {
+  color: rgb(0, 0, 0);
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #0aced4;
+  color: rgb(0, 0, 0);
+}
+
+/* Column container */
+.container {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #f2f4f5;
+  padding: 20px;
+}
+
+/* Main column */
+.main {
+  flex: 70%;
+  background-color: rgb(253, 255, 255);
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #0e91c5da;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #06bdddda;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .container, .navbar {   
+    flex-direction: column;
+  }
+}
+</style>
 </head>
 <body>
-  <header class="hero">
-    <img src="image_5f7d197d.png" alt="ภูเก็ต">
-  </header>
 
-  <nav class="navbar" aria-label="เมนูหลัก">
-    <a href="index.html">หน้าแรก</a>
-    <a href="teepak.html">แนะนำที่พัก</a>
-    <a href="food.html">อาหาร</a>
-    <a href="travel.html">สถานที่เที่ยว</a>
-    <a href="contact.html">ติดต่อเรา</a>
-  </nav>
 
-  <main class="container">
-    <aside class="side">
-      <h2>ที่ทองเทียวภูเก็ต</h2>
-      <h4>วัดฉลอง</h4>
-      <a href="9b688730-4a85-11f0-adba-01b9ca6cc64c_webp_original.webp" target="_blank" rel="noreferrer">
-        <img src="9b688730-4a85-11f0-adba-01b9ca6cc64c_webp_original.webp" alt="วัดฉลอง"> 
-      </a>
-      <p>เป็นวัดคู่บ้านคู่เมืองของจังหวัดภูเก็ตค่ะ ตั้งอยู่ตำบลฉลอง อำเภอเมืองภูเก็ต จังหวัดภูเก็ต</p>
-    </aside>
+<!-- Header -->
+<header>
+   <img src="c:\Users\COM-21\Downloads\image_5f7d197d.png"width="1400" height="500">
+</header>
 
-    <section class="main">
-      <h1>ที่ทองเทียวภูเก็ตเพิ่มเติม</h1>
+<!-- Navigation Bar -->
+<div class="navbar">
+  <a href="website.html">หน้าแรก</a>
+  <a href="teepak.html">แนะนำที่พัก</a>
+  <a href="food.html">อาหาร</a>
+  <a href="travel.html">สถานที่เที่ยว</a>
+  <a href="contact.html">ติดต่อเรา</a>
 
-      <div class="gallery">
-        <div class="gallery-item">
-          <a href="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&q=80" target="_blank" rel="noreferrer">
-            <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&q=80" alt="ภูเก็ตแฟนตาซี">
-          </a>
-          <div class="desc">ภูเก็ตแฟนตาซี</div>
-        </div>
+</div>
 
-        <div class="gallery-item">
-          <a href="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" target="_blank" rel="noreferrer">
-            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="หาดบานาน่า">
-          </a>
-          <div class="desc">หาดบานาน่า</div>
-        </div>
+<!-- Content Container -->
+<div class="container">
+  <div class="side">
+    <h2>ที่ทองเทียวภูเก็ด</h2>
+    <h4>วัดฉลอง</h4>
+    <a href="c:\Users\COM-21\Videos\9b688730-4a85-11f0-adba-01b9ca6cc64c_webp_original.webp">
+    <img src="c:\Users\COM-21\Videos\9b688730-4a85-11f0-adba-01b9ca6cc64c_webp_original.webp" width="350">
+</a>
+    <p>เป็นวัดคู่บ้านคู่เมืองของจังหวัดภูเก็ตค่ะ ตั้งอยู่ตำบลฉลอง อำเภอเมืองภูเก็ต จังหวัดภูเก็ต ห่างจากอำเภอเมืองภูเก็ตออกมาประมาณ "</p>
+    
 
-        <div class="gallery-item">
-          <a href="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=800&q=80" target="_blank" rel="noreferrer">
-            <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=800&q=80" alt="หาดยะนุ้ย">
-          </a>
-          <div class="desc">หาดยะนุ้ย</div>
-        </div>
 
-        <div class="gallery-item">
-          <a href="https://images.unsplash.com/photo-1493558103817-58b2924bce98?auto=format&fit=crop&w=800&q=80" target="_blank" rel="noreferrer">
-            <img src="https://images.unsplash.com/photo-1493558103817-58b2924bce98?auto=format&fit=crop&w=800&q=80" alt="เกาะไม้ท่อน">
-          </a>
-          <div class="desc">เกาะไม้ท่อน</div>
-        </div>
-      </div>
 
-      <h5>3 พิกัดทะเลภูเก็ตน้ำใส ทรายขาวละเอียด มีเอกลักษณ์เฉพาะตัว ทั้งหาดสวยระดับโลก และกิจกรรมทางทะเล</h5>
 
-      <h2>ที่ทองชื่อดัง</h2>
-      <div style="display: flex; justify-content: center; width: 100%; margin: 20px 0;">
-        <a href="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1000&q=80" target="_blank" rel="noreferrer" style="display: inline-block;">
-          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1000&q=80" alt="หอนาฬิกาพรหมเทพ" style="height: 300px; width: auto; display: block; border-radius: 12px;">
+
+  </div>
+  <div class="main">
+    <h2><style>
+* {
+  box-sizing: border-box;
+}
+
+div.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+div.gallery-item {
+  margin: 5px;
+  border: 1px solid #000000;
+  width: calc(25% - 20px);
+}
+
+
+div.gallery-item img {
+  width: 100%;
+  height: auto;
+}
+
+div.gallery-item div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  div.gallery-item {
+    width: calc(50% - 20px);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  div.gallery-item {
+    width: calc(100% - 20px);
+  }
+}
+</style>
+</head>
+<body>
+
+<h1>ที่ทองเทียวภูเก็ดเพิ่มเติม</h1>
+
+<div class="gallery">
+    
+    <!-- รูปที่ 1 -->
+    <div class="gallery-item">
+         <a href="c:\Users\COM-21\Videos\ดีไซน์ที่ยังไม่ได้ตั้งชื่อ-2024-05-20T131237.222.png">
+            <img src="c:\Users\COM-21\Videos\ดีไซน์ที่ยังไม่ได้ตั้งชื่อ-2024-05-20T131237.222.png">
         </a>
-      </div>
+        <div class="desc">ภูเก็ตแฟนตาซี</div>
+    </div>
 
-      <p>หอนาฬิกาพรหมเทพ</p>
-      <p>ตั้งอยู่บริเวณแยกธนาคารสแตนดาร์ดชาร์เตอร์ด จุดตัดระหว่างถนนพังงาและถนนภูเก็ต ในย่านเมืองเก่าภูเก็ต จังหวัดภูเก็ต</p>
-    </section>
-  </main>
+    <!-- รูปที่ 2 -->
+    <div class="gallery-item">
+        <a href="c:\Users\COM-21\Videos\images (6).jfif">
+            <img src="c:\Users\COM-21\Videos\images (6).jfif">
+        </a>
+        <div class="desc">หาดบานาน่า</div>
+    </div>
 
-  <footer>
-    <h5>
-      เว็บไซต์ของเรานำเสนอเนื้อหาและบริการที่ดีที่สุดเพื่อคุณ<br>
-      ติดต่อเรา<br>
-      อีเมล: tgg565676@gmail.com<br>
-      โทร: 0918073010
-    </h5>
-  </footer>
-</body>
+    <!-- รูปที่ 3 -->
+    <div class="gallery-item">
+        <a href="c:\Users\COM-21\Videos\images (7).jfif">
+            <img src="c:\Users\COM-21\Videos\images (7).jfif">
+        </a>
+        <div class="desc"> หาดยะนุ้ย </div>
+    </div>
+
+    <!-- รูปที่ 4 -->
+    <div class="gallery-item">
+        <a href="c:\Users\COM-21\Videos\3_เกาะไม้ท่อน.webp">
+            <img src="c:\Users\COM-21\Videos\3_เกาะไม้ท่อน.webp">
+        </a>
+        <div class="desc">เกาะไม้ท่อน</div>
+    </div>
+
+</div>
+<h5>3 พิกัดทะเลภูเก็ตน้ำใส ทรายขาวละเอียด มีเอกลักษณ์เฉพาะตัว ทั้งหาดสวยระดับโลกกิจกรรมและอูโมงปลา</h5>
+
+
+
+</a>
+ </div>
+
+  <h2>ที่ทองชื่อดัง</h2>   
+    
+   
+<div style="display: flex; justify-content: center; width: 100%; margin: 20px 0;">
+  <a href="c:\Users\COM-21\Videos\phuket10.jpg" style="display: inline-block;">
+    <img src="c:\Users\COM-21\Videos\phuket10.jpg" style="height: 300px; width: auto; display: block;">
+  </a>
+</div>
+
+
+    
+
+    <p>หอนาฬิกาพรหมเทพ </p>
+    <p>ตั้งอยู่บริเวณแยกธนาคารสแตนดาร์ดชาร์เตอร์ด (จุดตัดระหว่างถนนพังงาและถนนภูเก็ต) ในย่าน เมืองเก่าภูเก็ต จังหวัดภูเก็ต ประเทศไทย โดยอาคารสีเหลืองมัสตาร์ดอันเป็นเอกลักษณ์นี้โดดเด่นด้วย สถาปัตยกรรมสไตล์ชิโน-โปรตุกีส</p>
+
+  </div>
+</div>
+
+<!--  -->
+<footer>
+  <h2><footer>
+  <div class="">
+    <div class="">
+    
+    <h5>เว็บไซต์ของเรานำเสนอเนื้อหาและบริการที่ดีที่สุดเพื่อคุณ<br>ติดต่อเรา<br>อีเมล: tgg565676@gmail.com<br>โทร:0918073010</h5>
+    </div>
+    
+    
+      
+
+
+      </ul>
+    </div>
+
+   
+  
+  
+
+ </body>
 </html>
+
+
+
+
 
 
 

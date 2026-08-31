@@ -1,158 +1,235 @@
 <!DOCTYPE html>
-<html lang="th">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ร้านอาหารภูเก็ต</title>
-  <style>
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #fffaf5;
-      color: #111;
-    }
-    img { display: block; max-width: 100%; }
-    a { text-decoration: none; color: inherit; }
-    .navbar {
-      display: flex;
-      flex-wrap: wrap;
-      background: #0e9cd4;
-    }
-    .navbar a {
-      color: #000;
-      padding: 14px 20px;
-      text-align: center;
-      font-weight: bold;
-    }
-    .navbar a:hover { background: #0aced4; }
-    .container {
-      display: flex;
-      flex-wrap: wrap;
-      max-width: 1400px;
-      margin: 0 auto;
-    }
-    .side { flex: 30%; background: #f7f7f7; padding: 20px; }
-    .main { flex: 70%; background: #fff; padding: 20px; }
-    .hero img {
-      width: 100%;
-      height: 500px;
-      object-fit: cover;
-    }
-    .feature img, .gallery-item img, .featured-image img {
-      width: 100%;
-      border-radius: 12px;
-      object-fit: cover;
-    }
-    .feature img { height: 260px; margin: 10px 0; }
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 16px;
-      margin: 20px 0;
-    }
-    .gallery-item {
-      flex: 1 1 220px;
-      border: 1px solid #d9d9d9;
-      background: #fff;
-      border-radius: 12px;
-      overflow: hidden;
-    }
-    .gallery-item img { height: 220px; }
-    .desc {
-      padding: 12px;
-      text-align: center;
-      font-weight: bold;
-    }
-    footer {
-      background: #06bdddda;
-      padding: 24px 20px;
-      text-align: center;
-    }
-    footer h5 { margin: 0; line-height: 1.8; }
-    @media screen and (max-width: 700px) {
-      .container, .navbar { flex-direction: column; }
-      .hero img { height: 300px; }
-    }
-  </style>
+<title>ร้านอาหารภูเก็ด</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+
+
+/* Top navigation bar */
+.navbar {
+  display: flex;
+  background-color: #0e9cd4;
+}
+
+/* Navigation bar links */
+.navbar a {
+  color: rgb(0, 0, 0);
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #0aced4;
+  color: rgb(0, 0, 0);
+}
+
+/* Column container */
+.container {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #f2f4f5;
+  padding: 20px;
+}
+
+/* Main column */
+.main {
+  flex: 70%;
+  background-color: rgb(253, 255, 255);
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #0e91c5da;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #06bdddda;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .container, .navbar {   
+    flex-direction: column;
+  }
+}
+</style>
 </head>
 <body>
-  <header class="hero">
-<img src="image_825f61a7 (1).png"width="1400" height="500">
-  </header>
 
-  <nav class="navbar" aria-label="เมนูหลัก">
-    <a href="index.html">หน้าแรก</a>
-    <a href="teepak.html">แนะนำที่พัก</a>
-    <a href="food.html">อาหาร</a>
-    <a href="travel.html">สถานที่เที่ยว</a>
-    <a href="contact.html">ติดต่อเรา</a>
-  </nav>
 
-  <main class="container">
-    <aside class="side">
-      <h2>อาหาร</h2>
-      <h4>หมี่ฮกเกี้ยนผัดซีอิ๊วใส่ไข่ลาวา</h4>
-       <a href="lll.webp">
-<img src="lll.webp"alt="YouTube Video" width="250">
-      </a>
-      <p>เป็นเมนูเส้นท้องถิ่นขึ้นชื่อของภูเก็ต เอกลักษณ์คือใช้บะหมี่เหลืองเส้นหนาอวบ ผัดแบบมีน้ำขลุกขลิกข้น ๆ หอมกลิ่นกระทะ และท็อปด้วยไข่แดงเยิ้ม ๆ เมนูนี้ราคาที่ร้าน 150 บาท</p>
-    </aside>
+<!-- Header -->
+<header>
+   <img src="c:\Users\COM-21\Videos\images (4).jfif"width="1400" height="500">
+</header>
 
-    <section class="main">
-      <h1>อาหารภูเก็ต</h1>
+<!-- Navigation Bar -->
+<div class="navbar">
+  <a href="website.html">หน้าแรก</a>
+  <a href="teepak.html">แนะนำที่พัก</a>
+  <a href="food.html">อาหาร</a>
+  <a href="travel.html">สถานที่เที่ยว</a>
+  <a href="contact.html">ติดต่อเรา</a>
 
-      <div class="gallery">
-        <div class="gallery-item">
-          <a href="https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=800&q=80" target="_blank" rel="noreferrer">
-            <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=800&q=80" alt="หมี่ผัดฮกเกี้ยน">
-          </a>
-          <div class="desc">หมี่ผัดฮกเกี้ยน</div>
-        </div>
+</div>
 
-        <div class="gallery-item">
-          <a href="https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=800&q=80" target="_blank" rel="noreferrer">
-            <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=800&q=80" alt="ปลาหมึกผัดน้ำดำ">
-          </a>
-          <div class="desc">ปลาหมึกผัดน้ำดำ</div>
-        </div>
+<!-- Content Container -->
+<div class="container">
+  <div class="side">
+    <h2>อาหาร</h2>
+    <h4>หมี่ฮกเกี้ยนผัดซีอิ๊วใส่ไข่ลาวา</h4>
+    <a href="c:\Users\COM-21\Pictures\Screenshot 2026-08-10 105637.png">
+    <img src="c:\Users\COM-21\Pictures\Screenshot 2026-08-10 105637.png" width="350">
+</a>
+    <p>เป็นเมนูเส้นท้องถิ่นขึ้นชื่อของภูเก็ต เอกลักษณ์คือใช้บะหมี่เหลืองเส้นหนาอวบ ผัดแบบมีน้ำขลุกขลิกข้นๆ หอมกลิ่นกระทะ และท็อปด้วยไข่แดงเยิ้มๆ เมนูนี้ราคาที่ร้าน 150 บาท ครับ</p>
+    
 
-        <div class="gallery-item">
-          <a href="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80" target="_blank" rel="noreferrer">
-            <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80" alt="ลูกชิ้นปลาภูเก็ต">
-          </a>
-          <div class="desc">ลูกชิ้นปลาภูเก็ต</div>
-        </div>
 
-        <div class="gallery-item">
-          <a href="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=800&q=80" target="_blank" rel="noreferrer">
-            <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=800&q=80" alt="โอ้เอ๋ว">
-          </a>
-          <div class="desc">โอ้เอ๋ว</div>
-        </div>
-      </div>
 
-      <h5>สรุปเมนูพื้นเมืองภูเก็ตที่คุณถามมาทั้งหมดประกอบด้วยของคาวและของหวานรวม 5 เมนู ได้แก่ หมี่ผัดฮกเกี้ยนใส่ไข่ลาวา, หมูฮ้อง, ปลาหมึกผัดน้ำดำ, ลูกชิ้นปลาภูเก็ต และโอ้เอ๋ว</h5>
 
-      <h2>อาหารชื่อดัง ภูเก็ต</h2>
-      <a class="featured-image" href="https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=1200&q=80" target="_blank" rel="noreferrer">
-        <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=1200&q=80" alt="ขนมจีนภูเก็ต">
-      </a>
-      <p>ขนมจีนภูเก็ต</p>
-      <p>คนภูเก็ตนิยมทานกันในตอนเช้า โดยทานกับน้ำแกงชนิดต่าง ๆ มีสารพัดผักเป็นเครื่องเคียง นอกจากนี้ยังนิยมทานกับไข่ต้ม ห่อหมก และทอดมันปลาชาวภูเก็ตเองก็มีวิธีกินที่พิศดารกว่าปกติด้วย</p>
-    </section>
-  </main>
 
-  <footer>
-    <h5>
-      เว็บไซต์ของเรานำเสนอเนื้อหาและบริการที่ดีที่สุดเพื่อคุณ<br>
-      ติดต่อเรา<br>
-      อีเมล: tgg565676@gmail.com<br>
-      โทร: 0918073010
-    </h5>
-  </footer>
-</body>
+  </div>
+  <div class="main">
+    <h2><style>
+* {
+  box-sizing: border-box;
+}
+
+div.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+div.gallery-item {
+  margin: 5px;
+  border: 1px solid #000000;
+  width: calc(25% - 20px);
+}
+
+
+div.gallery-item img {
+  width: 100%;
+  height: auto;
+}
+
+div.gallery-item div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  div.gallery-item {
+    width: calc(50% - 20px);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  div.gallery-item {
+    width: calc(100% - 20px);
+  }
+}
+</style>
+</head>
+<body>
+
+<h1>อาหารภูเก็ต</h1>
+
+
+
+<div class="gallery">
+
+<div class="gallery-item">
+    <a href="c:\Users\COM-21\Videos\images (1).jfif"> 
+    <img src="c:\Users\COM-21\Videos\images (1).jfif" width="600" height="400">
+  </a>
+  <div class="desc">หมี่ผัดฮกเกี้ยน </div>
+</div>
+
+<div class="gallery-item">
+  <a href="c:\Users\COM-21\Videos\images (2).jfif">
+    <img src="c:\Users\COM-21\Videos\images (2).jfif" alt="Forest" width="700" height="400">
+  </a>
+    <div class="desc">ปลาหมึกผัดน้ำดำ</div>
+</div>
+
+<div class="gallery-item">
+ <a href="c:\Users\COM-21\Videos\images (3).jfif">
+    <img src="c:\Users\COM-21\Videos\images (3).jfif" alt="Mountains" width="600" height="400">
+  </a>
+  <div class="desc">ลูกชิ้นปลาภูเก็ต </div>
+</div>
+
+<div class="gallery-item">
+  <a href="c:\Users\COM-21\Videos\12-เมนูอาหารพื้นเมืองภูเก็ต-ต้องไปชิม-02-1024x683.webp">
+    <img src="c:\Users\COM-21\Videos\12-เมนูอาหารพื้นเมืองภูเก็ต-ต้องไปชิม-02-1024x683.webp" alt="Mountains" width="600" height="400">
+  </a>
+  <div class="desc">โอ้เอ๋ว</div>
+</div>
+
+
+</a>
+ </div>
+    <h5>สรุปเมนูพื้นเมืองภูเก็ตที่คุณถามมาทั้งหมดประกอบด้วยของคาวและของหวานรวม 5 เมนูครับ ได้แก่ หมี่ผัดฮกเกี้ยนใส่ไข่ลาวา (บะหมี่เส้นอวบผัดซอสขลุกขลิก), หมูฮ้อง (หมูสามชั้นเคี่ยวซีอิ๊วเนื้อนุ่มละลาย), ปลาหมึกผัดน้ำดำ (ปลาหมึกสดผัดน้ำหมึกรสเค็มหวาน), ลูกชิ้นปลาภูเก็ต (เนื้อปลาแท้เหนียวเด้งจิ้มซีฟู้ด) และปิดท้ายด้วยของหวานดับร้อนอย่าง โอ้เอ๋ว (วุ้นสมุนไพรใสใส่ถั่วแดงและเฉาก๊วยราดน้ำแดง) ครับ</h5>
+    <h2>อาหารชื่อดัง ภูเก็ต</h2>
+    
+   <a href="c:\Users\COM-21\Pictures\Screenshot 2026-08-10 112232.png">
+    <img src="c:\Users\COM-21\Pictures\Screenshot 2026-08-10 112232.png" style="width:100%; height:200px; object-fit:cover;">  
+    </a>
+    <p>ขนมจีนภูเก็ต</p>
+    <p> คนภูเก็ตนิยมทานกันในตอนเช้า โดยทานกับน้ำแกงชนิดต่าง ๆ มีสารพัดผักเป็นเครื่องเคียง นอกจากนี้ยังนิยมทานกับไข่ต้ม ห่อหมก และทอดมันปลาชาวภูเก็ตเองก็มีวิธีกินที่พิศดารกว่าปกติด้วย ตรงที่ว่าถ้าอยากกินน้ำแกงหลายแบบ เขาก็จะผสมด้วยกันไปเลย เช่น น้ำยา+แกงไตปลา น้ำยา+น้ำชุบหยำ ฯลฯ อันนี้แล้วแต่ความครีเอทส่วนบุคคลเลย</p>
+
+  </div>
+</div>
+
+<!--  -->
+<footer>
+  <h2><footer>
+  <div class="">
+    <div class="">
+    
+    <h5>เว็บไซต์ของเรานำเสนอเนื้อหาและบริการที่ดีที่สุดเพื่อคุณ<br>ติดต่อเรา<br>อีเมล: tgg565676@gmail.com<br>โทร:0918073010</h5>
+    </div>
+    
+    
+      
+
+
+      </ul>
+    </div>
+
+   
+  
+  
+
+ </body>
 </html>
+
+
+
 
 
 
